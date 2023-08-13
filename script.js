@@ -65,3 +65,7 @@ window.onscroll=function(){
     returnBtn.style.opacity=0;
   }
 }
+let twitter=document.querySelector(".x-twitter");
+twitter.addEventListener("click",function(){
+  window.location.href='https://www.instagram.com/m7md_zeidan/';
+});
