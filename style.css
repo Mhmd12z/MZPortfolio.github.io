@@ -210,6 +210,7 @@ body {
   right: 0;
   top: 0;
   z-index: -1;
+  background-attachment: fixed;
 }
 @media (max-width: 992px) {
   .back {
@@ -224,6 +225,7 @@ body {
     right: 0;
     top: 0;
     z-index: -1;
+    background-attachment: fixed;
   }
 }
 .main .content h1 {
