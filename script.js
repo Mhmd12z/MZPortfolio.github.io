@@ -68,6 +68,6 @@ window.onscroll=function(){
 let twitter=document.querySelectorAll(".x-twitter");
 for(let i=0;i<twitter.length;i++){
   twitter[i].addEventListener("click",function(){
-    window.location.href='https://www.instagram.com/m7md_zeidan/';
+    window.location.href='https://twitter.com/m7mdzeidan';
   });
 }
