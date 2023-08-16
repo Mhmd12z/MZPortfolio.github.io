@@ -161,7 +161,7 @@ body {
     align-items: center;
     gap: 50px;
     position: fixed;
-    top: 50%;
+    top: 0;
     left: 50%;
     transform: translate(-50%);
     background-color: var(--primary-color);
@@ -188,7 +188,6 @@ body {
     left: 100%;
   }
 }
-
 .main .container {
   height: calc(100vh - 75px);
   position: relative;
@@ -380,11 +379,11 @@ body {
 .about .content p span {
   color: var(--main-color);
 }
-.about .content p{
+.about .content p {
   padding: 10px 0 0 30px;
   position: relative;
 }
-.about .content p::before{
+.about .content p::before {
   content: "";
   width: 20px;
   height: 3px;
@@ -581,11 +580,14 @@ body {
   align-items: center;
   width: fit-content;
   margin: 20px auto;
+  cursor: pointer;
 }
-.projects a {
+.projects a,
+.projects .view-more {
   transition: var(--transition);
 }
-.projects a:hover {
+.projects a:hover,
+.projects .view-more:hover {
   color: var(--secondary-color);
   transform: scale(1.1);
 }
@@ -695,6 +697,7 @@ body {
   height: 5px;
   background-color: var(--main-color);
   left: -700px;
+  z-index: -1;
 }
 .contact .title::after {
   content: "";
@@ -703,6 +706,7 @@ body {
   height: 5px;
   background-color: var(--main-color);
   right: -700px;
+  z-index: -1;
 }
 .contact .cards {
   display: flex;
@@ -745,6 +749,7 @@ body {
   height: 5px;
   background-color: var(--main-color);
   left: -700px;
+  z-index: -1;
 }
 .contact .socials::after {
   content: "";
@@ -753,19 +758,20 @@ body {
   height: 5px;
   background-color: var(--main-color);
   right: -700px;
+  z-index: -1;
 }
 @media (max-width: 767px) {
   .contact .title::before {
-    left: -450px;
+    left: -300px;
   }
   .contact .title::after {
-    right: -450px;
+    right: -300px;
   }
   .contact .socials::before {
-    left: -500px;
+    left: -280px;
   }
   .contact .socials::after {
-    right: -500px;
+    right: -280px;
   }
 }
 .footer {
@@ -790,6 +796,10 @@ body {
   padding-bottom: var(--section-padding);
   padding-top: var(--section-padding);
 }
+.projects .cards .close {
+  display: none;
+}
+
 /* End Coding */
 .container {
   padding-left: 15px;
