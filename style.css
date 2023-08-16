@@ -210,6 +210,7 @@ body {
   top: 0;
   z-index: -1;
   background-attachment: fixed;
+  object-fit: cover;
 }
 @media (max-width: 992px) {
   .back {
@@ -225,6 +226,7 @@ body {
     top: 0;
     z-index: -1;
     background-attachment: fixed;
+    object-fit: cover;
   }
 }
 .main .content h1 {
@@ -277,7 +279,7 @@ body {
   background-color: var(--main-color);
   animation-name: ad;
   animation-timing-function: linear;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
 }
@@ -292,7 +294,7 @@ body {
   flex-direction: column;
   position: absolute;
   right: 5px;
-  bottom: 0;
+  bottom: 70px;
   font-size: 30px;
   gap: 10px;
 }
@@ -352,7 +354,7 @@ body {
   background-color: var(--main-color);
   position: absolute;
   right: 20px;
-  bottom: 170px;
+  bottom: 240px;
 }
 @media (max-width: 767px) {
   .main .line {
@@ -799,7 +801,6 @@ body {
 .projects .cards .close {
   display: none;
 }
-
 /* End Coding */
 .container {
   padding-left: 15px;
