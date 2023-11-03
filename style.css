@@ -769,7 +769,9 @@ body {
 .experience .cards {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
 
 .experience .card .line {
