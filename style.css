@@ -769,7 +769,7 @@ body {
 .experience .cards {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 40px;
 }
 .experience .cards .text{
   width: 100%;
