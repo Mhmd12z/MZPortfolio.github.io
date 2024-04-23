@@ -728,7 +728,7 @@ body {
 }
 
 .experience .card .design {
-  width: 40%;
+  width: 20%;
   position: relative;
 }
 
@@ -769,11 +769,11 @@ body {
 .experience .cards {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
+  gap: 10px;
 }
-
+.experience .cards .text{
+  width: 100%;
+}
 .experience .card .line {
   height: 80%;
   width: 3px;
