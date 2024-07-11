@@ -290,6 +290,7 @@ body {
   margin: 0;
 }
 
+
 @media (max-width: 767px) {
   .main .content h1 {
     font-size: 40px;
@@ -631,7 +632,24 @@ body {
   object-fit: cover;
   border-radius: 5px;
 }
-
+.projects .cards .linkedin{
+  position: relative;
+}
+.projects .cards .linkedin::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #0964c0;
+  opacity: 0;
+  transition: var(--transition);
+}
+.projects .cards .linkedin:hover::before{
+  z-index: 1;
+  opacity: 0.5;
+}
 .projects .content {
   position: absolute;
   top: 50%;
@@ -645,7 +663,7 @@ body {
   align-items: center;
   flex-direction: column;
   line-height: 25px;
-  z-index: -1;
+  z-index: 1;
   opacity: 0;
   transition: var(--transition);
 }
@@ -658,10 +676,13 @@ body {
 .projects .card:hover img {
   filter: brightness(30%);
 }
-
+.projects .linkedin:hover img{
+  filter: none;
+}
 .projects .content h2 {
   font-size: 30px;
   font-weight: 500;
+  line-height: 30px;
 }
 
 .projects .content p {
